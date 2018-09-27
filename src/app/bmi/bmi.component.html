@@ -28,7 +28,7 @@
         <li *ngFor="let list of bmiList ; let i=index" >
           <div class="list">
           <span>
-          <span class="color" [class]="color" ><span>{{bmiLv}}</span></span>
+          <span class={{list.color}} ><span>{{list.bmiLv}}</span></span>
           BMI:{{list.bmiValue.toFixed(2)}}
           </span>
           <span>身高:{{list.cmValue}}</span>

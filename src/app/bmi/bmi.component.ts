@@ -29,9 +29,10 @@ export class BmiComponent implements OnInit {
   addResult (event) {
 
     this.bmiValue2 = this.calculateBmi();
-    this.updateList(this.bmiLv, this.color);
-    console.log(this.color + ',' + this.bmiLv);
-    this.bmiList.push({ bmiValue: this.bmiValue2, cmValue: this.cmValue, kgValue: this.kgValue});
+    this.updateList();
+    // console.log(this.color + ',' + this.bmiLv);
+    this.bmiList.push({ bmiValue: this.bmiValue2, cmValue: this.cmValue, kgValue: this.kgValue, color: this.color,
+      bmiLv: this.bmiLv});
 
   }
 
@@ -43,13 +44,30 @@ export class BmiComponent implements OnInit {
     this.bmiList.splice(i, 1);
   }
 
-  updateList(bmiLv, color) {
+  updateList() {
+      const bmiLv = '';
+      const color = '';
       if ( this.bmiValue2 < 18.5) {
-          bmiLv = '過輕';
-          color = 'color-b';
+         this. bmiLv = '過輕';
+         this.color = 'color-b';
 
-      }
-    }
+        } else if (this.bmiValue2 >= 18.5 && this.bmiValue2 <= 23.9) {
+          this.bmiLv = '理想';
+          this.color = 'color-g';
+        } else if (this.bmiValue > 24 && this.bmiValue <= 27.9) {
+          this.bmiLv = '過重';
+          this.color = 'color-o';
+        } else if (this.bmiValue >= 28 && this.bmiValue < 30) {
+              this.bmiLv = '輕微肥胖';
+              this.color = 'color-bo';
+        } else if (this.bmiValue >= 30.1 && this.bmiValue < 35) {
+              this.bmiLv = '中度肥胖';
+              this.color = 'color-bbo';
+        } else if (this.bmiValue >= 35) {
+              this.bmiLv = '重度肥胖';
+              this.color = 'color-r';
+     }
+  }
 
 
 

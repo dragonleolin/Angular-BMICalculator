@@ -126,9 +126,33 @@ h2 {
   height: 62px;
 }
 
+
+.color-g {
+  background: #86D73F;
+  box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
+}
 .color-b {
   background: #31BAF9;
-  /* box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29); */
-  /* background-color: black;*/
-  border: 1px solid #31BAF9;
+  box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
+  /* border: 1px solid #31BAF9; */
+}
+
+.color-o {
+  background: #FF982D;
+  box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
+}
+
+.color-bo {
+  background: #FF6C02;
+  box-shadow: 2px 0 3px 0 rgba(255, 108, 2, 0.29);
+}
+
+.color-bbo {
+  background: #FF6C02;
+  box-shadow: 2px 0 3px 0 rgba(255, 108, 2, 0.29);
+}
+
+.color-r {
+  background: #FF1200;
+  box-shadow: 2px 0 3px 0 rgba(255, 17, 0, 0.29);
 }
