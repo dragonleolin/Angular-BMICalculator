@@ -45,8 +45,8 @@ export class BmiComponent implements OnInit {
   }
 
   updateList() {
-      const bmiLv = '';
-      const color = '';
+      var bmiLv = '';
+      var color = '';
       if ( this.bmiValue2 < 18.5) {
          this. bmiLv = '過輕';
          this.color = 'color-b';

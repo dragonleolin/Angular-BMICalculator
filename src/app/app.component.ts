@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // tslint:disable-next-line:no-var-keyword
   title = 'angular-bmiCalculate';
 }
